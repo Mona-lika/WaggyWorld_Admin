@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { 
   LayoutDashboard, Users, PawPrint, ClipboardList, 
-  Activity, Settings, HelpCircle, LogOut, ChevronDown, ChevronUp 
+  Activity, Heart, HelpCircle, LogOut, ChevronDown, ChevronUp 
 } from 'lucide-react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
@@ -14,17 +14,16 @@ export default function Sidebar() {
 
   const menuItems = [
     { icon: <LayoutDashboard size={20}/>, label: "Dashboard", path: "/dashboard" },
-    // We will handle 'Users' separately because it has sub-items
     { icon: <PawPrint size={20}/>, label: "Pets", path: "/pets" },
     { icon: <ClipboardList size={20}/>, label: "Applications", path: "/applications" },
     { icon: <Activity size={20}/>, label: "Health Logs", path: "/health" },
-    { icon: <Settings size={20}/>, label: "Settings", path: "/settings" },
+    { icon: <Heart size={20}/>, label: "Donations", path: "/donations" },
   ];
 
   return (
     <div style={styles.sidebar}>
       <div style={styles.logoSection}>
-        <img src="/WaggyWorld.png" alt="Logo" style={styles.sidebarLogo} />
+        <img src="/WaggyWorldLogo copy.png" alt="Logo" style={styles.sidebarLogo} />
       </div>
 
       <nav style={styles.nav}>

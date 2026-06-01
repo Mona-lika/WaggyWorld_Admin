@@ -50,7 +50,7 @@ export default function AdminLogin({ setToken }) {
       <div style={styles.rightSide}>
         <div style={styles.loginCard}>
           <img 
-            src="/WaggyWorld.png" // Ensure this is in public folder
+            src="/WaggyWorldLogo copy.png" // Ensure this is in public folder
             alt="Logo" 
             style={styles.logo} 
           />
@@ -100,7 +100,7 @@ export default function AdminLogin({ setToken }) {
             </div>
 
             <button type="button" style={styles.socialBtn}>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_Reference_Icon.svg" style={styles.socialIcon} alt="google" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" style={styles.socialIcon} alt="google" />
                 Sign in with Google
             </button>
 
